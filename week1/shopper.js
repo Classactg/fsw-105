@@ -6,3 +6,4 @@ var shopper = {
     fullName : function(){return this.firstName + " " + this.lastName;},
     shoppingCart: ["grapes", "milk", "bread"]
 }
+console.log(shopper)
