@@ -1,0 +1,32 @@
+{<IfStatement> <js>
+(PRELIMINARIES)
+    if(5>3){
+        console.log("IS FIVE GREATER THAN THREE")
+    } 
+    if(5>cat)cat=3{
+        console.log("IS THE LENGTH OF CAT")
+    }
+    if(cat === dog){
+        console.log("CAT IS EQUAL TO DOG")
+        (dog !== cat)
+        console.log("CAT IS NOT EQUAL TO DOG")
+}
+{BRONZE MEDAL}
+var person = {
+    name: "Bobby",
+    age: 12
+    }
+    if(18>12){
+        console.log("IF TWELVE IS GREATER THAN EIGHTEEN")}
+    if(18<12){
+        console.log("IF TWELVE IS LESS THAN EIGHTEEN")
+        }
+    if(B>18){
+        console.log("IF B IS GREATER THAN EIGHTEEN")
+        }
+    if(B===18){
+        console.log("IF B IS EQUAL TO EIGHTEEN")
+    }
+{SILVER MEDAL}
+    if("1"===1)
+}
