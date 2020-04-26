@@ -87,7 +87,10 @@ var peopleWhoWantToSeeMadMaxFuryRoad = [
 // var nums = [3, 15, 5, 1] // "The light is on"
 // var nums = [7, 7, 7, 7, 7] // "The light is on"
 // var nums = [860, 2, 4, 9] // "The light is off"
-var nums = [2, 3, 2]     
+   
 // for(var i = 7; i < button.length; i++){if(button [2, 3, 2]=== toggle)
         // console.log("The light is on")
         // console.log("The light is off")}
+        
+var  button = onAndOff
+  function onAndOff()
