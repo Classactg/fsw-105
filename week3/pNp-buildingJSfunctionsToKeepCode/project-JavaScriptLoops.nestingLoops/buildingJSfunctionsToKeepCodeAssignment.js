@@ -21,12 +21,6 @@ for (var i = 0; i < officeItems.length; i++){
     }
 }
 console.log(count)  // -> 4
-
-// console.log(officeItems[0])
-// console.log(officeItems[1])
-// console.log(officeItems[2])
-// console.log(officeItems[3])
-// console.log(officeItems[4])
 {
 if(password === 0){
   console.log("")
