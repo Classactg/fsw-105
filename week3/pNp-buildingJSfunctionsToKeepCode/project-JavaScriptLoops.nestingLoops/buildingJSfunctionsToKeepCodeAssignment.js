@@ -11,15 +11,22 @@ function count(){
 }
 
 count()
+
+var officeItems = ["stapler", "monitor", "computer", "desk", "lamp", "computer", "lamp", "stapler", "computer", "computer"]
+var count = 0
+
+for (var i = 0; i < officeItems.length; i++){
+   if (officeItems[i] === "computer"){
+        count++
+    }
+}
+console.log(count)  // -> 4
+
 // console.log(officeItems[0])
 // console.log(officeItems[1])
 // console.log(officeItems[2])
 // console.log(officeItems[3])
 // console.log(officeItems[4])
-
-
-
-
 {
 if(password === 0){
   console.log("")
@@ -56,41 +63,20 @@ var peopleWhoWantToSeeMadMaxFuryRoad = [
     else if(peopleWhoWantToSeeMadMaxFuryRoad[i].age < 18){
       console.log("not old enough");
   }
-      
-      }
+       }
     }
   }
-
   isOldEnough();
-    // console.log(persons.name)
-    // console.log(persons.age)
-    // if(18>=person.age)
-    //   console.log(person.name + "Is old enough to see Mad Max Fury Road")
-    
-  }
-//console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name  )
-  // console.log("Madeline is old enough. SHE'S good to see Mad Max Fury Road")
+
   function evenOrOdd(){
     for(var i = 0; i < 101; i++){
       if(i % 2 === 1) {
         console.log(`${i} is odd`)
-      
-      }
+          }
       else{
         console.log(`${i} is even`)
       }
     }
   }
-  
-  evenOrOdd()   
-      // {extraCredit}
-// var nums = [3, 15, 5, 1] // "The light is on"
-// var nums = [7, 7, 7, 7, 7] // "The light is on"
-// var nums = [860, 2, 4, 9] // "The light is off"
-   
-// for(var i = 7; i < button.length; i++){if(button [2, 3, 2]=== toggle)
-        // console.log("The light is on")
-        // console.log("The light is off")}
-        
-var  button = onAndOff
-  function onAndOff()
+    evenOrOdd()   
+}
