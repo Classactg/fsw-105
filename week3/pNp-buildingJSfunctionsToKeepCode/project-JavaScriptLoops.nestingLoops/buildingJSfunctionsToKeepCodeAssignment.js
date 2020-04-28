@@ -1,17 +1,3 @@
-var officeItems = ["stapler", "monitor","computer", "desk", "lamp", "computer", "lamp", "stapler", "computer", "computer"]
-var password = 'computer'
-function count(){
-  var officeItemsCount = 0
-  for(var i = 0; i < officeItems.length; i++){
-    if( officeItems[i]=== password){
-      officeItemsCount += 1
-
-      }
-    }console.log(officeItemsCount) 
-}
-
-count()
-
 var officeItems = ["stapler", "monitor", "computer", "desk", "lamp", "computer", "lamp", "stapler", "computer", "computer"]
 var count = 0
 
@@ -21,10 +7,6 @@ for (var i = 0; i < officeItems.length; i++){
     }
 }
 console.log(count)  // -> 4
-{
-if(password === 0){
-  console.log("")
-}
 var peopleWhoWantToSeeMadMaxFuryRoad = [
   {
     name: "Mike",
@@ -73,4 +55,3 @@ var peopleWhoWantToSeeMadMaxFuryRoad = [
     }
   }
     evenOrOdd()   
-}
