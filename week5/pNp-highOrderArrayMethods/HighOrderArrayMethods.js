@@ -150,154 +150,620 @@ console.log(namesOnly([
     }
 
     console.log(sum);
-   
     function total(arr){
-        var resul = arr.reduce(function(final, num){
-            final += num
-            return final
+        var result = arr.reduce(function(final, num){
+          final += num
+          return final
         })
         return result
-    }
-
-    console.log(stringItUp([1,2,3]));
-
-    function stringConcat(arr) {
-        var result = arr.reduce(function(final,num ){
+        }
+        console.log(total([1,2,3]));
+        function stringConcat(arr){
+        var result = arr.reduce(function(final,num){   
             return final
-        },[1,2,3])
+        }, [1,2,3])
         return result
-    }
-
-    console.log(stringConcat([1,2,3]))
-
-     function totalVotes(arr) {
-         var result = arr.reduce(function(final,voters){
-             if(voters.voted){
-                 final++
-             }
-             return final
-         },0)
-         return result
-     }
- 
-     var voters = [
-        {name:'Bob' , age: 30, voted: true},
-        {name:'Jake' , age: 32, voted: true},
-        {name:'Kate' , age: 25, voted: false},
-        {name:'Sam' , age: 20, voted: false},
-        {name:'Phil' , age: 21, voted: true},
-        {name:'Ed' , age:55, voted: true},
-        {names:'Tami' , age: 54, voted:true},
-        {name: 'Mary', age: 31, voted: false},
-        {name: 'Becky', age: 43, voted: false},
-        {name: 'Joey', age: 41, voted: true},
-        {name: 'Jeff', age: 30, voted: true},
-        {name: 'Zack', age: 19, voted: false}
-     ];
-
-     console.log(totalVotes(voters));
-
-    function shoppingSpree(arr) {
-        var result = arr.reduce(function(final,item){
-            return final+item.price
-        },0)
-        return result
-    }
-    var wishlist = [
-         { title: "Tesla Model S", price: 90000 },
-         { title: "4 carat diamond ring", price: 45000 },
-         { title: "Fancy hacky Sack", price: 5 },
-         { title: "Gold fidgit spinner", price: 2000 },
-         { title: "A second Tesla Model S", price: 90000}    
-    ];
-
-     console.log(shoppingSpree(wishlist));
-
-    function flatten(arr) {
-        var result = arr.reduce(function(final,flat){return final.concat(flat)})
-        return result
-    }
-
-    var arrays = [
-        ["1", "2", "3"],
-        [true],
-        [4, 5, 6]
-    ];
-    console.log(flatten(arrays));
-
-    var voters = [
-        {name:'Bob' , age: 30, voted: true},
-        {name:'Jake' , age: 32, voted: true},
-        {name:'Kate' , age: 25, voted: true},
-        {name:'Sam' , age: 20, voted: false},
-        {name:'Phil' , age: 21, voted: true},
-        {name:'Ed' , age:55, voted:true},
-        {name:'Tami' , age: 54, voted:true},
-        {name:'Mary', age: 31, voted: false},
-        {name:'Becky', age: 43, voted: false},
-        {name:'Joey', age: 41, voted: true},
-        {name:'Jeff', age: 30, voted: true},
-        {name:'Zack', age: 19, voted: false}
-     ]; 
-    function voterResults(arr){
-        var result = arr.reduce(function(final,age){
-            if(age.voted && age.age > 18 && age.age < 25)final.youngVotes++
-            if(age.age > 18 && age.age > 26)final.youth++
-            if(age.voted && age.age > 26 && age.age < 35)final.midVotes++
-            if(age.age > 26 && age.age < 35)final.mids++
-            if(age.voted && age.age > 36 && age.age < 56)final.oldVotes++
-            if(age.age > 36 && age.age < 56)final.olds++
-
-            return final
-        },
-    {youngVotes:0,youth:0,midVotes:0,mids:0,oldVotes:0,olds:0})
-    return result
-    }
-    console.log(voterResults(voters));
-
-    function leastToGreatest(arr) { 
-        var result = arr.sort(function(a, b){
-            return a-b});
+        }
+        console.log(stringConcat([1,2,3]))
+        function totalVotes(arr){
+            var result = arr.reduce(function(final,voters){
+                if(voters.voted){
+                    final++
+                }
+                return final
+            }, 0)
+            return result
+        }
+        var voters = [
+            { name: "Bob", age: 30, voted: true },
+            { name: "Jake", age: 32, voted: true },
+            { name: "Kate", age: 25, voted: false },
+            { name: "Sam", age: 20, voted: false },
+            { name: "Phil", age: 21, voted: true },
+            { name: "Ed", age: 55, voted: true },
+            { name: "Tami", age: 54, voted: true },
+            { name: "Mary", age: 31, voted: false },
+            { name: "Becky", age: 43, voted: false },
+            { name: "Joey", age: 41, voted: true },
+            { name: "Jeff", age: 30, voted: true },
+            { name: "Zach", age: 19, voted: false }
+        ];
+        console.log(totalVotes(voters));
+        function shoppingSpree(arr){
+            var result = arr.reduce(function(final,item){
+                return final+item.price
+            } ,0)
+                return result
+        }
+        var wishlist = [
+            {title: "tesla Model S", price: 90000},
+            {title: "4 carat diamond ring", price: 45000},
+            {title: "Fancy Hacking Sack", price: 5},
+            {title: "Gold fidgit spiiner", price: 2000},
+            {title: "a second Tsela Model s", price: 90000}
+        ]; 
+        console.log(shoppingSpree(wishlist));
+        function flatten(arr){
+            var result = arr.reduce(function(final,flat){
+                return final.concat(flat)
+            })
+                return result
+        }
+        var arrays = [
+            ["1", "2", "3"],
+            [true],
+            [4, 5, 6]
+        ];
+        console.log(flatten(arrays));
+        var voters = [
+            { name: "Bob", age: 30, voted: true },
+            { name: "Jake", age: 32, voted: true },
+            { name: "Kate", age: 25, voted: false },
+            { name: "Sam", age: 20, voted: false },
+            { name: "Phil", age: 21, voted: true },
+            { name: "Ed", age: 55, voted: true },
+            { name: "Tami", age: 54, voted: true },
+            { name: "Mary", age: 31, voted: false },
+            { name: "Becky", age: 43, voted: false },
+            { name: "Joey", age: 41, voted: true },
+            { name: "Jeff", age: 30, voted: true },
+            { name: "Zach", age: 19, voted: false }
+        ];
+        function voterResults(arr){
+            var result = arr.reduce(function(final,age){
+                if (age.voted && age.age > 18 && age.age < 25)final.youngVotes++
+                if (age.age > 18 && age.age < 26)final.youth++
+                if (age.voted && age.age > 26 && age.age < 35)final.midVotes++
+                if (age.age > 26 && age.age < 35)final.mids++
+                if (age.voted && age.age > 36 && age.age < 56)final.oldVotes++
+                if (age.age > 36 && age.age < 56)final.olds++
+                return final
+            },{youngVotes:0,youth:0,midVotes:0,mids:0,oldVotes:0,olds:0})
+                return result
+        }
+        console.log(voterResults(voters));
+        function leastToGreatest(arr){
+             var result = arr.sort(function(a, b){return a-b});
             arr[0];
             return result
-    }
-
-     console.log(leastToGreatest([1, 3,5, 2, 90,20]));
-
-    function greatestToLeast(arr) {
-        var result = arr.sort(function(a, b)
-        {return b-a});
-        arr[0];
+        }
+        console.log(leastToGreatest([1,3,5,2,90,20]));
+        function greatestToLeast(arr){
+            var result = arr.sort(function(a, b){return b-a});
+           arr[0];
+           return result
+        }
+        console.log(greatestToLeast([1,3,5,2,90,20]));
+        function LengthSort(arr){
+            var result = arr.sort(function(a, b){return a.length-b.length});
+            return result
+        }
+        console.log(LengthSort(["dog","wolf","by","family","eaten"]));
+        function alphabetical(arr){
+            var result = arr.sort();
+            return result
+        }
+        console.log(alphabetical(["dog","wolf","by","family","eaten"]));
+        function byAge(arr){
+        var result = arr.sort(function(a, b){return ( a.age - b.age)})
         return result
-    }
-
-     console.log(greatestToLeast([1, 3, 5, 2, 90, 20]));
- 
-    function lengthSort(arr) {
-        var result = arr.sort(function(a, b)
-        {return a.length-b.length});
-
-        return result
-    }
-
-     console.log(lengthSort(["dog", "wolf", "by", "family", "eaten"]));
-
-    function byAge(arr){
-         var result = arr.sort(function(a, b)
-         {return(a.age-b.age)})
-
-         return result
-    }
-
-    console.log(byAge([
-    { name: "Quiet Samurai", age: 22},
-    { name: "Arrogant Ambassador", age: 100 },
-    { name: "Misunderstood Observer", age: 2 },
-    { name: "Unlucky Swami", age: 77 }
-    ]));
-
-    
+        }
+        console.log(byAge([{name: "Quiet Samurai", age:22},
+        { name: "Arrogant ambassador", age: 100},
+        {name:"Misunderstood Observer", age: 2},
+        {name: "unlucky swami", age: 77}]))
 
 
 
-       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
