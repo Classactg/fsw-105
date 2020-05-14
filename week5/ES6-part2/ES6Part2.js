@@ -56,7 +56,7 @@ blangString("Hawaii");
 rightString = (location) => {
     console.log(`I hope you enjoy your stay. Please ask the president of ${location} if you need anything`)
 }
-rightString("hawaii")
+rightString("Hawaii")
 
 
 
